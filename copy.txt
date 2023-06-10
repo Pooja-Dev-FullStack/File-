@@ -1,0 +1,37 @@
+1. public boolean parrotTrouble(boolean talking, int hour) {
+  return (talking && (hour < 7 || hour > 20));
+  // Need extra parenthesis around the || clause
+  // since && binds more tightly than ||
+  // && is like arithmetic *, || is like arithmetic +
+}
+
+2. https://stackoverflow.com/questions/18410234/how-does-one-represent-the-empty-char
+3.In Java, the standard streams are referred to by System.in (for stdin), System. out (for stdout), 
+and System. err (for stderr).
+
+4. System.out implements the standard output stream. The standard output stream is a C library concept that has been 
+assimilated into the Java language. Simply put, a stream is a flowing buffer of characters; the standard output stream is
+ a stream that writes its contents to the display.
+ The standard output stream is a convenient place for any (old-fashioned text-based 
+application to display its output.
+
+5. The standard input stream is an InputStream . 
+InputStream which is an abstract base class from which all input streams(Java InputStream Class --
+-FileInputStream.
+-ByteArrayInputStream.
+-ObjectInputStream.)
+ in the java.io package derive. 
+The InputStream class defines a methods for reading bytes or arrays of bytes,
+ marking locations in the stream, skipping bytes of input, 
+finding out the number of bytes that are available for reading, 
+and resetting the current position within the stream. 
+An input stream is automatically opened when you create it. You can explicitly close a stream with the 
+close() method, or let it be closed implicitly when the object is garbage collected.
+
+6. The java.io package contains two classes, InputStream and OutputStream, 
+from which most of the other classes in the package derive.
+
+7. The OutputStream class is an abstract base class.
+ OutputStream defines methods for writing bytes or arrays of bytes to the stream and flushing the stream. 
+An output stream is automatically opened when you create it. You can explicitly close an output stream 
+with the close() method, or let it be closed implicitly when the object is garbage collected.
